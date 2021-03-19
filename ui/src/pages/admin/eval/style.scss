@@ -1,0 +1,17 @@
+@import '../../../resources/mixins';
+
+.memeval-add-form {
+    padding: 24px;
+
+    .ant-form-item {
+        display: flex;
+        .ant-form-item-label{
+            width: 100px;
+            text-align: right;
+        }
+        
+        .ant-form-item-control-wrapper {
+            min-width: 200px;
+        }
+    }
+}

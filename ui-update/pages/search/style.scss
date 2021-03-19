@@ -1,0 +1,11 @@
+.search-page {
+    .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+        padding-left: 25px;
+        .ant-collapse-arrow {
+            left: 0;
+        }
+    }
+    .ant-input-number {
+        width: 80px;
+    }
+}

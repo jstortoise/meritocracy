@@ -1,0 +1,14 @@
+@import '../../../public/static/mixins';
+
+.organisation-panel {
+    width: 177px;
+    margin-bottom: 20px;
+
+    * {
+        font-size: 13px;
+    }
+
+    .ant-avatar {
+        @include button-shadow;
+    }
+}

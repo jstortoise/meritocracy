@@ -1,0 +1,27 @@
+// Import mixins from "core" module
+@import '../../../mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN FORM */
+
+
+.ant-form-item-label {
+  text-align: left;
+  
+}
+
+.ant-form-item-label label {
+    font-size: $bigger__font-size;
+}
+
+.ant-form-item > .ant-form-item, .ant-form-item :not(.ant-form) > .ant-form-item {
+  margin-top: -2px;
+}
+
+.ant-form-item {
+    margin-bottom: 6px;
+}
+
+form .ant-select:only-child, form .ant-cascader-picker:only-child {
+  display: inline-block;
+}

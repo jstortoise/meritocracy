@@ -1,0 +1,12 @@
+.members-list {
+}
+
+.screen-xs, .screen-sm, .screen-md, .screen-lg, .screen-xl {
+    .hide-header-xl {
+        width: 100%;
+
+        .header {
+            display: none !important;
+        }
+    }
+}

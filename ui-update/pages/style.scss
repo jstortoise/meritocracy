@@ -1,0 +1,204 @@
+@import '../public/static/mixins';
+
+.main-login {
+	background-size: cover;
+	background-position: center center;
+
+    &__block {
+		min-width: 300px;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 65px 20px 40px;
+		border-radius: 10px;
+		overflow: hidden;
+		background-color: $white;
+		position: relative;
+		box-shadow: 0 10px 40px -20px rgba(0,0,50,.2),  0 10px 80px -20px rgba(0,0,50,.1);
+
+		&__form {
+			position: relative;
+			z-index: 2;
+
+			form {
+				margin-top: 50px;
+			}
+		
+			.logo {
+				display: block; 
+				margin: auto;
+				width: 120px;
+			}
+		
+			.form-actions {
+				border: none;
+		
+				.ant-btn-primary {
+					display: block;
+					margin: auto;
+					width: 40%;
+					min-width: 130px;
+					height: 40px;
+					font-size: 18px;
+				}
+			}
+		
+			// Social login styles
+			.social-btn-group {
+				margin-top: rescale(22);
+				padding: 0 rescale(32);
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				.btn-social {
+					width: calc(50% - 10px);
+					height: 35px;
+					padding: 0 0 0 25px;
+					margin: 5px;
+					border-radius: 3px !important;
+					border-width: 0;
+					font-size: 15px;
+					background-repeat: no-repeat;
+					background-position: left center;
+					background-position-x: 5px;
+					background-size: 25px 25px;
+				}
+				.btn-google {
+					background-image: url(../public/static/images/google.svg);
+				}
+				.btn-facebook {
+					background-color: #4267B1;
+					background-image: url(../public/static/images/facebook.svg);
+					color: white;
+				}
+				.btn-twitter {
+					background-color: #00C2FF;
+					background-image: url(../public/static/images/twitter.svg);
+					color: white;
+				}
+				.btn-instagram {
+					background-image: url(../public/static/images/instagram.svg);
+				}
+			}
+
+			.captcha {
+				width: 100%;
+				margin-top: 10px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+
+				.captcha-image {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				.ant-form-item {
+					width: 100%;
+					text-align: center;
+					input {
+						width: 70%;
+						margin: auto;
+					}
+				}
+			}
+		
+			.remember-me {
+				text-align: center; 
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+		&__no-account {
+			text-align: center; 
+			font-size: 13px;
+			font-weight: 900;
+
+			a {
+				color: rgba(0, 0, 0, 0.65);
+                text-decoration: underline;
+			}
+		}
+    }
+}
+
+.ant-notification-topRight {
+  	z-index: 99999 !important;
+}
+
+.landing-page {
+    position: absolute;
+    width: 100%;
+    min-height: calc(100% - 64px);
+    top: 64px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+    background-image:url(/static/images/landing_bg.png);
+    background-position: center bottom;
+    padding: 20px;
+
+    .header-left {
+        width: 55%;
+        margin-top: 160px;
+        * {
+            color: $white;
+        }
+    }
+
+    .header-right {
+        width: 40%;
+        float: right;
+        margin-top: 200px;
+    }
+
+    h2 {
+        font-size: 41px;
+        margin: 0;
+        font-weight: 750;
+	}
+	
+    h2, p {
+        text-align: center;
+	}
+	
+    .signup-container {
+        margin-top: 50px;
+
+        .ant-btn-primary {
+            display: block;
+            margin: auto;
+            width: 180px;
+            height: 50px;
+            font-size: 22px;
+        }
+    }
+}
+
+.screen-xs, .screen-sm {
+    .landing-page {
+        .header-left, .header-right {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+.screen-xs {
+    .landing-page {
+        .header-left, .header-right, .signup-container {
+            margin-top: 50px;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@import '../../public/static/mixins';
+
+.members {
+    h4, span {
+        font-size: 13px;
+    }
+    
+    .header {
+        .ant-input-affix-wrapper .ant-input:not(:last-child) {
+            padding-left: 35px;
+            padding-right: initial;
+            border-radius: 20px;
+            @include button-shadow;
+        }
+        .ant-input-affix-wrapper .ant-input-suffix {
+            left: 12px;
+            right: initial;
+        }
+    }
+
+    .ant-tag, .ant-tag a, .ant-tag a:hover {
+        color: rgba(0, 0, 0, 0.65);
+        background: #CED9FF;
+        border-radius: 20px;
+        padding: 5px 10px;
+    }
+
+    .ant-input {
+        border-radius: 20px;
+        @include button-shadow;
+    }
+}
+
+.rating-history {
+    .ant-breadcrumb {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    button {
+        line-height: 32px;
+    }
+
+    .ant-input {
+        border-radius: 20px;
+        @include button-shadow;
+    }
+
+    .header {
+        & > .ant-col {
+            margin-top: 10px;
+        }
+    }
+}

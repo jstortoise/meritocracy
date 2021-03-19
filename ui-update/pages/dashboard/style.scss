@@ -1,0 +1,38 @@
+@import '../../public/static/mixins';
+
+.dashboard-page {
+    // display: block;
+
+    .ant-col {
+        .ant-card {
+            margin-bottom: 8px;
+        }
+    }
+
+    .avatar-card {
+        height: calc((100vh - 80px) / 1080 * 676);
+        // height: 676px;
+    }
+
+    .my-organisations-card {
+        height: calc((100vh - 80px) / 1080 * 252);
+    }
+
+    .verified-accounts-card, .revenue-card, .blank-card {
+        height: calc((100vh - 80px) / 1080 * 431.5);
+        // height: 431.5px;
+    }
+
+    .admin-accounts-card {
+        height: calc((100vh - 80px) / 1080 * 498);
+        // height: 496px;
+    }
+    .monthly-card {
+        height: calc((100vh - 80px) / 1080 * 120);
+        // height: 120px;
+    }
+    .all-organisations-card {
+        height: calc((100vh - 80px) / 1080 * 359);
+        // height: 361px;
+    }
+}

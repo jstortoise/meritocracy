@@ -1,0 +1,22 @@
+@import '../../public/static/mixins';
+
+
+.transactions {
+    .ant-input {
+        border-radius: 20px;
+        @include button-shadow;
+    }
+
+    .header {
+        & > .ant-col {
+            margin-top: 10px;
+        }
+    }
+
+    .list {
+        .ant-col {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+}

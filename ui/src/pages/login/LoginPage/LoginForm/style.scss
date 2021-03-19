@@ -1,0 +1,111 @@
+@import '../../../../resources/mixins';
+
+.cat__pages__login__block__form {
+    form {
+        margin-top: 58px;
+    }
+
+    .logo {
+        display: block; 
+        margin: auto;
+        width: rescale(160);
+    }
+
+    .form-actions {
+        border: none;
+    }
+
+    // Social login styles
+
+    .social-text {
+        width: rescale(188);
+        margin: auto;
+        text-align: center;
+        font-size: rescale(15);
+    }
+
+    .social-login {
+        margin-top: rescale(22);
+        padding: 0 rescale(32);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .social-icon {
+        width: rescale(48);
+        text-align: center;
+        img {
+            height: rescale(32);
+        }
+    }
+
+    .social-button{
+        width: rescale(172);
+        height: rescale(49);
+        padding: 0 0;
+        margin: rescale(4);
+        border-radius: 3px;
+        border-width: 0;
+        @include button-shadow;
+        transition: box-shadow 0.2s;
+        font-size: rescale(20);
+        text-align: left;
+        display: flex;
+    }
+
+    .social-label {
+        margin-left: rescale(-28);
+        flex-grow: 1;
+        text-align: center;
+        line-height: rescale(30);
+    }
+
+    .recaptcha {
+        width: rescale(268);
+        height: rescale(66);
+        margin: auto;
+        margin-top: rescale(19);
+        background: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__checkbox {
+            margin-left: rescale(22);
+        }
+
+        &__logo {
+            margin-right: rescale(12);
+            width: rescale(50);
+        }
+    }
+
+    .remember-me {
+        text-align: center; 
+        margin-top: rescale(22);
+    }
+
+    .login {
+        text-align: center; 
+        // margin-top: rescale(30);
+
+        &__button {
+            display: block;
+            margin: auto;
+            width: rescale(172);
+            height: rescale(49);
+            background-image: url(../../../../resources/images/login_button_bg.svg);
+            background-size: cover;
+            border: none;
+            background-color: transparent;
+            font-size: rescale(23);
+            text-transform: uppercase;
+            @include button-shadow;
+            transition: box-shadow 0.2s; 
+        }
+    }
+}
+
+

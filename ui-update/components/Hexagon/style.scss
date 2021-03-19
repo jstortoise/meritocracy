@@ -1,0 +1,42 @@
+.hexagon {
+    position: relative;
+    width: 40px; 
+    height: 23.09px;
+    background-color: #f3f7fd;
+    margin: 11.54px 0;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.75);
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 28.28px;
+        height: 28.28px;
+        -webkit-transform: scaleY(0.5774) rotate(-45deg);
+        -ms-transform: scaleY(0.5774) rotate(-45deg);
+        transform: scaleY(0.5774) rotate(-45deg);
+        background-color: inherit;
+        left: 5.857px;
+        box-shadow: 0 0 5px rgba(0,0,0,0.75);
+    }
+
+    &::before {
+        top: -14.13px;
+    }
+      
+    &::after {
+        bottom: -14.13px;
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 40px; 
+        height: 23.09px;
+        line-height: 23.09px;
+        z-index: 2;
+        background: inherit;
+    }
+}

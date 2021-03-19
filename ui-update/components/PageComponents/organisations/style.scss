@@ -1,0 +1,40 @@
+@import '../../../public/static/mixins';
+
+.organisation-panel {
+    width: 177px;
+    margin-bottom: 20px;
+
+    * {
+        font-size: 13px;
+    }
+
+    .ant-avatar {
+        @include button-shadow;
+    }
+}
+
+.organisation-empty-panel {
+    max-width: 584px;
+    .ant-card-head {
+        border-bottom: none;
+    }
+    .ant-card-body {
+        text-align: center;
+        .img-paragraph {
+            padding: 30px;
+        }
+    }
+}
+
+.organisation-slider {
+    .ant-avatar-square {
+        // @include button-shadow;
+    }
+    .ant-btn-round.ant-btn-icon-only {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .title {
+        font-weight: 700;
+    }
+}

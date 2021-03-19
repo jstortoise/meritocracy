@@ -1,0 +1,74 @@
+@import '../../public/static/mixins';
+
+.profile-edit-page {
+    max-width: 990px;
+    .ant-btn {
+        @include button-shadow;
+    }
+
+    .ant-btn-round {
+        font-size: 12px;
+        min-width: 75px;
+        // font-size: 13px;
+    }
+
+    .ant-input[disabled] {
+        background-color: #eee;
+    }
+    .ant-input-group-addon {
+        background-color: #eee;
+    }
+
+    .btn-social {
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-position-x: 8px;
+        background-size: 25px 25px;
+        border: none;
+        width: 150px;
+        height: 40px;
+    }
+    .btn-google {
+        background-image: url(../../public/static/images/google.svg);
+    }
+    .btn-facebook {
+        background-color: #4267B1;
+        background-image: url(../../public/static/images/facebook.svg);
+        color: white;
+    }
+    .btn-twitter {
+        background-color: #00C2FF;
+        background-image: url(../../public/static/images/twitter.svg);
+        color: white;
+    }
+    .btn-instagram {
+        background-image: url(../../public/static/images/instagram.svg);
+    }
+
+    .show-medal {
+        background-image: url(../../public/static/images/medal.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 30px;
+        padding-left: 30px;
+    }
+    .show-medal_right {
+        background-image: url(../../public/static/images/medal.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 30px;
+        padding-right: 30px;
+    }
+
+    .text-right-md {
+        text-align: right;
+    }
+}
+
+.screen-xs, .screen-sm {
+    .profile-page {
+        .text-right-md {
+            text-align: left;
+        }
+    }
+}    

@@ -1,0 +1,63 @@
+@import '../../public/static/mixins';
+
+.pagination {
+    .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link, .ant-pagination-item {
+        border-radius: 20px;
+        @include button-shadow;
+    }
+    
+    button {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+
+        border-radius: 20px;
+        @include button-shadow;
+
+        &:active, &:hover, &[disabled] {
+            border-color: transparent;
+            @include button-shadow;
+        }
+    }
+
+    &.small {
+        .ant-pagination-item {
+            border-radius: initial;
+            box-shadow: initial;
+        }
+
+        .ant-pagination-next .ant-pagination-item-link, .ant-pagination-prev .ant-pagination-item-link, .ant-pagination-item-active {
+            background: #fff;
+            border-radius: 20px;
+            @include button-shadow;
+        }
+    
+        .ant-pagination-prev {
+            margin-right: 8px;
+        }
+
+        .ant-pagination-next {
+            margin-left: 8px;
+        }
+
+        .ant-pagination-item-active {
+            border-color: transparent;
+            a {
+                color: initial;
+                padding: 0;
+            }
+        }
+    
+        button {
+            border-color: transparent;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+    
+            &:active, &:hover, &[disabled] {
+                background: #fff;
+                border-color: transparent;
+            }
+        }
+    }
+}

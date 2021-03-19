@@ -1,0 +1,61 @@
+@import '../../public/static/mixins';
+
+.organisation-create-panel {
+    max-width: 485px;
+    .ant-card-head {
+        border-bottom: none;
+        .ant-card-meta-title, .ant-card-meta-description {
+            font-size: 13px;
+        }
+    }
+    .ant-card-body {
+        .ant-btn-round.ant-btn-lg {
+            height: 50px;
+            padding: 10px 53px;
+        }
+
+        .captcha {
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .captcha-image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .ant-form-item {
+                width: 100%;
+                text-align: center;
+                input {
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
+
+.organisations {
+    .header {
+        .ant-input-affix-wrapper .ant-input:not(:last-child) {
+            padding-left: 35px;
+            padding-right: initial;
+            border-radius: 20px;
+            @include button-shadow;
+        }
+        .ant-input-affix-wrapper .ant-input-suffix {
+            left: 12px;
+            right: initial;
+        }
+        
+        button {
+            border-radius: 20px;
+            @include button-shadow;
+        }
+    }
+}
